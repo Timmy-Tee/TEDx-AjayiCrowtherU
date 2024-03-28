@@ -1,0 +1,200 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap");
+/* Fonts */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Space Grotesk";
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  --duration: 1s;
+  display: flex;
+  top: 0;
+  overflow-y: none;
+  z-index: 9;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background-color: white;
+  transition: var(--duration);
+}
+.left-side::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #db0001, #000);
+  opacity: 0.78;
+}
+.header {
+  -webkit-text-stroke: 1px #dee2e63f;
+}
+.card {
+  background: linear-gradient(#1d1d1d05, #db000094);
+}
+
+.ticket {
+  background: url("./images/auditorium.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ticket:before,
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.712);
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#hide_img {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  justify-content: space-around;
+  padding: 15px;
+  transition: 0.6s;
+  display: flex;
+  background: transparent;
+  z-index: 3;
+  align-items: center;
+  position: fixed;
+}
+.navLinks {
+  display: flex;
+}
+
+nav ul li {
+  color: #fff;
+  display: inline-block;
+}
+nav ul li a {
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s all ease-in;
+  padding: 10px 15px;
+  margin: 5px;
+}
+
+.stickyNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fdfdfde7;
+  z-index: 20;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  /* place-content: center; */
+  align-items: center;
+  box-shadow: 0px 0px 2px 1px #fff;
+  transition: 0.5s all ease-in-out;
+  box-shadow: 0px 0px 10px 0px var(--box-shadow);
+  backdrop-filter: blur(6px) saturate(147%);
+  -webkit-backdrop-filter: blur(6px) saturate(147%);
+}
+.stickyNav a {
+  color: #000;
+}
+
+/* . ul{
+  display: flex;
+} */
+
+@media (max-width: 750px) {
+  .navLinks {
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    place-content: center;
+    align-items: center;
+    display: none;
+    /* border: 1px solid white; */
+    flex-direction: column;
+    background: #d62828;
+    width: 100%;
+    height: 100vh;
+    transition: 1s ease-in-out;
+    animation: slide 0.7s 1;
+    z-index: 4;
+  }
+  @keyframes slide {
+    from {
+      right: -90%;
+    }
+    to {
+      right: 0%;
+    }
+  }
+  #icon,
+  #iconmultiply {
+    display: flex;
+  }
+  .stickyNav #icon {
+    color: black;
+  }
+  .stickyNav a {
+    color: white;
+  }
+  .nav ul {
+    display: grid;
+    width: 100%;
+  }
+  .nav ul li {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+  }
+  .nav ul li a {
+    text-align: center;
+  }
+  .nav ul li a:hover {
+    background: #fff;
+    color: #d62828;
+  }
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+  border: 1px solid;
+}
