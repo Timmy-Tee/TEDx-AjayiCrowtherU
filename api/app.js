@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 const mongoose = require("mongoose")
 
 // Routes
@@ -13,7 +13,7 @@ app.use(express.static(__dirname + "/public"))
 app.use(express.json());
 
 
-mongoose.connect(process.env.DB_URL)
+mongoose.connect(process.env.DBURL)
 .then(()=>{
     console.log("Connection Successful");
 })

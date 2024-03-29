@@ -18,7 +18,7 @@ function DisplayBlog() {
   }, []);
 
   return (
-    <div className="flex items-center flex-col">
+    <div className="flex place-content-center flex-col">
       {blog.map((post) => {
         return (
           <div className=" flex place-content-center ">

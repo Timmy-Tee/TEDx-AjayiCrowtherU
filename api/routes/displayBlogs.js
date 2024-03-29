@@ -36,7 +36,7 @@ routes.post("/upload", uploadImages , async(req, res) => {
   // Upload the first Image
   await cloudinary.uploader.upload(path1, {folder: "TEDx"}, async(err,result1) =>{
       if(err){
-        console.log(err);
+        console.log(err); 
         res.send(500).json(err)
       }
       // Upload teh second Image
