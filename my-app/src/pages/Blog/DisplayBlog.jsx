@@ -1,9 +1,8 @@
-import { faRedditAlien } from "@fortawesome/free-brands-svg-icons";
-import { faAngleLeft, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Footer from "../../components/Footer/Footer"
 
 function DisplayBlog() {

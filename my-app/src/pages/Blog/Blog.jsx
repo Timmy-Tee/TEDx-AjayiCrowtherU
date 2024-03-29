@@ -36,13 +36,13 @@ function Blog() {
 
   return (
     <div>
-      {/* { */}
-      {/* loader ? (
+      {
+      loader ? (
             <div className="preloader">
               <l-cardio size="70" speed="1.3" color="#db0001"></l-cardio>
             </div>
           ) :
-          ( */}
+          (
       <div>
         <Nav />
         <Banner image={BlogImage} />
@@ -73,9 +73,9 @@ function Blog() {
 
         <Footer />
       </div>
-      {/* ) */}
+      )
 
-      {/* } */}
+      }
     </div>
   );
 }

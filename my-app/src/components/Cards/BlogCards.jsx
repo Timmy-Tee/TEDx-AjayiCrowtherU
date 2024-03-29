@@ -1,12 +1,10 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
 
 function BlogCard(e) {
   return (
     <div className="flex ">
       <div className=" basis-[100%] ">
         <a
-          href={`/displayBlog/${e.blogTitle}`}xz
+          href={`/displayBlog/${e.blogTitle}`}
           // key={e.id}
           className="flex flex-col items-start justify-between shadow-lg"
           target="_blank"

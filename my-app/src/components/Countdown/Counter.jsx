@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 function Counter() {
   const [day, setDay] = useState("00");
