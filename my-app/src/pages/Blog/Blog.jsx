@@ -23,10 +23,10 @@ function Blog() {
   useEffect(() => {
     const fetchData = async()=>{
       try {
-        const res = await axios.get("/blogs/posts")
+        const res = await axios.get("https://tedx-ajayicrowtheru.onrender.com/blogs/posts")
         setBlogData(res.data)
       } catch (error) {
-        console.log(error.message)
+        console.log(error)
       }
     }
     fetchData()

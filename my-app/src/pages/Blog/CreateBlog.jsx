@@ -19,14 +19,14 @@ function CreateBlog() {
   const submitPost = async () => {
     try {
       await axios
-        .post("/blogs/upload", {
+        .post("https://tedx-ajayicrowtheru.onrender.com/blogs/upload", {
           blogAuthor,
           blogTitle,
           blogDesc,
           blogAuthorJob,
         })
         .then(() => {
-          navigate("/blog")
+          navigate("https://tedx-ajayicrowtheru.vercel.app/blog")
         });
     } catch (err) {
       console.log(err);
@@ -39,7 +39,7 @@ function CreateBlog() {
     <div className="p-4 flex items-center place-content-center">
       <form
         enctype="multipart/form-data"
-        action="/blogs/upload"
+        action="https://tedx-ajayicrowtheru.onrender.com/blogs/upload"
         method="post"
         className="flex basis-[90%] overflow-hidden flex-col space-y-9 relative"
       >

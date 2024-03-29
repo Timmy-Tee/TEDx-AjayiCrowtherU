@@ -10,8 +10,9 @@ function DisplayBlog() {
   let { title } = useParams();
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get(`/blogs/${title}`);
-      setBlog([res.data]);
+      const res = await axios.get(`https://tedx-ajayicrowtheru.onrender.com/blogs/${title}`) 
+        setBlog([res.data]);
+        console.log(blog)
     };
     getPost();
   }, []);
@@ -25,7 +26,7 @@ function DisplayBlog() {
               <div className="mb-4 md:mb-0 w-full mx-auto relative">
                 <div className="lg:px-0 lg:flex lg:flex-col">
                   <a
-                    href="/blog"
+                    href="https://tedx-ajayicrowtheru.vercel.app/blog"
                     className="px-3 py-3 lg:w-[15%] w-[50%] text-center text-gray-100 bg-main-red flex items-center justify-center rounded"
                   >
                     <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />

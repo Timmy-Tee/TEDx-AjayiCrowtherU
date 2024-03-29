@@ -4,7 +4,7 @@ function BlogCard(e) {
     <div className="flex ">
       <div className=" basis-[100%] ">
         <a
-          href={`/displayBlog/${e.blogTitle}`}
+          href={`https://tedx-ajayicrowtheru.vercel.app/displayBlog/${e.blogTitle}`}
           // key={e.id}
           className="flex flex-col items-start justify-between shadow-lg"
           target="_blank"
