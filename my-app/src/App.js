@@ -22,7 +22,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/speakers" element={<AboutSpeakers />} />
           <Route path="/createBlog" element={<CreateBlog />} />
-          <Route path="/displayBlog/:title" element={<DisplayBlog />} />
+          <Route path="/displayBlog/:blogtitle" element={<DisplayBlog />} />
         </Routes>
       </Router>
     </div>

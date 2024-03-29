@@ -7,12 +7,13 @@ import Footer from "../../components/Footer/Footer"
 
 function DisplayBlog() {
   const [blog, setBlog] = useState([]);
-  let { title } = useParams();
+  const { blogtitle } = useParams();
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get(`https://tedx-ajayicrowtheru.onrender.com/blogs/${title}`) 
+      const res = await axios.get(`https://tedx-ajayicrowtheru.onrender.com/blogs/${blogtitle}`) 
         setBlog([res.data]);
-        console.log(blog)
+        console.log(blog) 
+        console.log(blogtitle) 
     };
     getPost();
   }, []);
@@ -21,10 +22,10 @@ function DisplayBlog() {
     <div className="flex place-content-center flex-col">
       {blog.map((post) => {
         return (
-          <div className=" flex place-content-center ">
+          <div className=" flex place-content-center " >
             <div className="mt-10 w-[90%]">
               <div className="mb-4 md:mb-0 w-full mx-auto relative">
-                <div className="lg:px-0 lg:flex lg:flex-col">
+                <div className="lg:px-0 lg:flex lg:flex-col" key={post._id}>
                   <a
                     href="https://tedx-ajayicrowtheru.vercel.app/blog"
                     className="px-3 py-3 lg:w-[15%] w-[50%] text-center text-gray-100 bg-main-red flex items-center justify-center rounded"

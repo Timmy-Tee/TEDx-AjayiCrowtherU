@@ -21,7 +21,7 @@ function CreateBlog() {
       await axios
         .post("https://tedx-ajayicrowtheru.onrender.com/blogs/upload", {
           blogAuthor,
-          blogTitle,
+          blogTitle,  
           blogDesc,
           blogAuthorJob,
         })
