@@ -9,9 +9,9 @@ function DisplayBlog() {
   const [blog, setBlog] = useState([]);
   const { blogtitle } = useParams();
   useEffect(() => {
-    const getPost = async () => {
-      const res = await axios.get(`https://tedx-ajayicrowtheru.onrender.com/blogs/${blogtitle}`) 
-        setBlog([res.data]);
+    const getPost = () => {
+      const res = axios.get(`https://tedx-ajayicrowtheru.onrender.com/blogs/${blogtitle}`) 
+        setBlog(res.data);
         console.log(blog) 
         console.log(blogtitle) 
     };
@@ -37,7 +37,7 @@ function DisplayBlog() {
                   <div className="grid lg:grid-cols-2 items-center">
                     <div>
                       <h2 className="text-4xl font-semibold text-gray-800 leading-tight mt-4 font-rubik ">
-                        {post.title}
+                        {/* {post.title} */}
                       </h2>
                       <p className="py-2 text-main-red inline-flex items-center justify-center mb-2">
                         {new Date(post.createdAt).toDateString()}

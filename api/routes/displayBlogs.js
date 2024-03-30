@@ -74,20 +74,15 @@ routes.get("/posts", cors() ,async(req,res)=>{
 
 // GEt individual post
 
-routes.get("/:title", cors(), async(req,res)=>{
-  try{
-    const title = req.params.title
-    await blogModel.findOne({ title: title })
+routes.get("/:blogTitle", cors(), async(req,res)=>{
+    const title = await req.params.blogTitle
+    await blogModel.findOne({title: title})
     .then((d)=>{
       res.status(200).json(d)
     })
     .catch(err =>{
       res.status(404).json(err) 
     })
-  }
-  catch(err){
-    res.status(500).json(err)
-  }
 })
 
 
