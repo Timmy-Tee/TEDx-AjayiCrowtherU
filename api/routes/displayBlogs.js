@@ -12,7 +12,7 @@ routes.post("/upload", uploadImages , async(req, res) => {
   const path1 = await req.files['coverPhoto']
   const path2  = await req.files['authorPicture']
   console.log(path1,path2)
-
+  const trimmedTitle = req.body.blogTitle
 
 
   // If the image is uploaded
@@ -32,7 +32,7 @@ routes.post("/upload", uploadImages , async(req, res) => {
           }
           else{
             const blog = new blogModel({
-                title: req.body.blogtitle,
+                title: trimmedTitle.trimEnd(),
                 desc: req.body.blogDesc,
                 author: req.body.author,
                 job: req.body.authorJob,
