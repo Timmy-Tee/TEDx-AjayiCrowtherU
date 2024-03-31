@@ -32,7 +32,7 @@ routes.post("/upload", uploadImages , async(req, res) => {
           }
           else{
             const blog = new blogModel({
-                title: trimmedTitle.trimEnd(),
+                title: trimmedTitle,
                 desc: req.body.blogDesc,
                 author: req.body.author,
                 job: req.body.authorJob,
