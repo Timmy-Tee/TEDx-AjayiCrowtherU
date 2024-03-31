@@ -31,7 +31,7 @@ routes.post("/upload", uploadImages , async(req, res) => {
           }
           else{
             const blog = new blogModel({
-                title: req.body.blogTitle,
+                title: req.body.blogtitle,
                 desc: req.body.blogDesc,
                 author: req.body.author,
                 job: req.body.authorJob,
