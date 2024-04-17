@@ -8,6 +8,7 @@ import NotFound from "./pages/404/NotFound";
 import Events from "./pages/Events/Events";
 import CreateBlog from "./pages/Blog/CreateBlog";
 import DisplayBlog from "./pages/Blog/DisplayBlog";
+import Faqs from "./pages/FAQs/Faqs"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/speakers" element={<AboutSpeakers />} />
+          <Route path="/faq" element={<Faqs />} />
           <Route path="/createBlog" element={<CreateBlog />} />
           <Route path="/displayBlog/:blogtitle" element={<DisplayBlog />} />
         </Routes>

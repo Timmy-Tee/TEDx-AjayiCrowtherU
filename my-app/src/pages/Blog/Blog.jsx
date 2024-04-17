@@ -31,7 +31,6 @@ function Blog() {
     }
     fetchData()
 
-    console.log(blogData)
   }, []);
 
   return (
@@ -49,10 +48,11 @@ function Blog() {
 
         <div className="flex p-[20px]">
           <div className="mx-auto basis-full ">
-            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
+            
               {blogData.map((post) => {
                 return (
-                  <div>
+                 
                   <BlogCard
                     key={post._id}
                     id={post._id}
@@ -64,10 +64,10 @@ function Blog() {
                     author={post.author}
                     job={post.job}
                   />
-                  </div>
-                );
+               
+                )
               })}
-            </div>
+          </div>
           </div>
         </div>
 

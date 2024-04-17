@@ -3,9 +3,10 @@ import Cards from "./Cards";
 function CardHolder(e) {
   return (
     <div className=" ">
-      <div className="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-3 lg:gap-x-4 lg:gap-y-3 gap-y-5  ">
+      <div className="grid grid-cols-1 w-full md:grid-cols-2 md:gap-x-3 lg:grid-cols-3 lg:gap-x-4 lg:gap-y-3 gap-y-5  ">
         {e.dataProps.map((data) => {
           return (
+
             <Cards
               key={data.key}
               image={data.Image}
@@ -14,6 +15,7 @@ function CardHolder(e) {
               instagram={data.instagram}
               twitter={data.twitter}
               linkedin={data.linkedin}
+              facebook={data.facebook}
             />
           );
         })}

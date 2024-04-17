@@ -6,7 +6,7 @@ import speakerData from "../../data/speakers";
 
 function Speakers() {
   return (
-    <div className="bg-banner flex flex-col p-[10px] lg:p-[50px] text-main-section ">
+    <div className="bg-banner flex flex-col p-[10px] lg:p-[50px]  text-main-section ">
       <Header
         main_header={speakerTitle.main_header}
         mini_header={speakerTitle.mini_header}

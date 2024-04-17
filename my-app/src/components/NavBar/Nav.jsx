@@ -59,6 +59,9 @@ function Nav() {
             <li>
               <a href="/gallery">Gallery</a>
             </li>
+            <li>
+              <a href="/faq">FAQs</a>
+            </li>
           </ul>
         </div>
 

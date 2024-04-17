@@ -198,3 +198,21 @@ input[type="file"]::-webkit-file-upload-button {
   visibility: hidden;
   border: 1px solid;
 }
+
+
+
+#none{
+  display: none;
+}
+
+
+
+
+
+
+/* Morphisim */
+.blur_bg{
+  backdrop-filter: blur(7px) saturate(110%);
+  -webkit-backdrop-filter: blur(7px) saturate(110%);
+  background-color: rgba(221, 223, 227, 0.33);
+}

@@ -9,11 +9,9 @@ function DisplayBlog() {
   const [blog, setBlog] = useState([]);
   const { blogtitle } = useParams();
   useEffect(() => {
-    const getPost = () => {
-      const res = axios.get(`https://tedx-ajayicrowtheru.onrender.com/blogs/${blogtitle}`) 
-        setBlog(res.data);
-        console.log(blog) 
-        console.log(blogtitle) 
+    const getPost = async () => {
+      const res = await axios.get(`https://tedx-ajayicrowtheru.onrender.com/blogs/${blogtitle}`) 
+        setBlog([res.data]);
     };
     getPost();
   }, []);
@@ -74,8 +72,8 @@ function DisplayBlog() {
                 </div>
               </div>
 
-              <div className="flex flex-col lg:flex-row lg:space-x-12">
-                <div className="px-4 lg:px-0 mt-12 leading-[2.2] tracking-[1px] text-gray-600 w-full">
+              <div className="flex flex-col lg:flex-row lg:space-x-12 border">
+                <div className="px-4 lg:px-0 mt-12 leading-[2.2] tracking-[1px] text-gray-600 w-full text-balance break-words ">
                   <p className="pb-6">{post.desc}</p>
                 </div>
               </div>

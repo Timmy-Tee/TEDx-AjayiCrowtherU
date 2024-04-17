@@ -1,4 +1,5 @@
 import {
+  faFacebook,
   faInstagram,
   faLinkedin,
   faTwitter,
@@ -8,16 +9,18 @@ import speakerData from "../../data/speakers";
 import Icons from "../../components/Icons/Icons";
 import Nav from "../../components/NavBar/Nav";
 import Banner from "../../components/Banner/Banner";
+import BannerImage from "../../images/speakersbg.jpg"
+
 
 function AboutSpeakers() {
   return (
     <div className="">
       <Nav />
 
-      <Banner />
+      <Banner image={BannerImage}/>
 
       <section className="bg-white ">
-        <div className="grid p-[10px] grid-cols-1 lg:mx-0 gap-6 lg:max-w-none lg:grid-cols-2 place-content-center items-center">
+        <div className="grid p-[10px] grid-cols-1 lg:mx-0 gap-6 lg:max-w-none lg:grid-cols-2 place-content-center items-center pre-wrap">
           {speakerData.map((speaker) => {
             return (
               <div>
@@ -43,14 +46,47 @@ function AboutSpeakers() {
                         </div>
                         <br />
 
+                      {
+                        speaker.facebook ? 
+                      (
                         <Icons
                           link1={speaker.instagram}
-                          icon1=<FontAwesomeIcon icon={faInstagram} />
+                          icon1=<FontAwesomeIcon icon={faInstagram} className="text-[20px]" />
                           link2={speaker.linkedin}
-                          icon2=<FontAwesomeIcon icon={faLinkedin} />
-                          link3={speaker.twitter}
-                          icon3=<FontAwesomeIcon icon={faTwitter} />
+                          icon2=<FontAwesomeIcon icon={faLinkedin} className="text-[20px]" />
+                          link3={speaker.facebook}
+                          icon3=<FontAwesomeIcon icon={faFacebook} className="text-[20px]" />
                         />
+                      )
+                      
+                      :
+                        !speaker.linkedin ? (
+                        (
+                        <Icons
+                          link1={speaker.instagram}
+                          icon1=<FontAwesomeIcon icon={faInstagram} className="text-[20px]" />
+
+                         display2="none"
+
+                          link3={speaker.twitter}
+                          icon3=<FontAwesomeIcon icon={faTwitter} className="text-[20px]" />
+                        />
+                      )                      
+                      )
+                        
+                        : 
+                        (
+                        <Icons
+                          link1={speaker.instagram}
+                          icon1=<FontAwesomeIcon icon={faInstagram} className="text-[20px]" />
+                          link2={speaker.linkedin}
+                          icon2=<FontAwesomeIcon icon={faLinkedin} className="text-[20px]" />
+                          link3={speaker.twitter}
+                          icon3=<FontAwesomeIcon icon={faTwitter} className="text-[20px]" />
+                        />
+                      )
+                      }
+                       
                       </div>
                     </figcaption>
 

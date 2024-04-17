@@ -15,7 +15,6 @@ function CreateBlog() {
     setBlogDesc(e.target.value);
     setAuthorJob(e.target.value);
   };
-
   const submitPost = async () => {
     try {
       await axios
@@ -157,7 +156,7 @@ function CreateBlog() {
               rows={4}
               name="blogDesc"
               id="comment"
-              className="block w-[100%] rounded-sm outline-none text-gray-900 p-3 shadow-sm ring-1 ring-gray-300 focus:ring-2  focus:ring-main-color sm:text-sm sm:leading-6"
+              className="block w-[100%] rounded-sm outline-none whitespace-normal text-gray-900 p-3 shadow-sm ring-1 ring-gray-300 focus:ring-2  focus:ring-main-color sm:text-sm sm:leading-6"
               placeholder="Enter Your Blog Details Here"
               onChange={getValue} required
             />

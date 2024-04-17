@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import Icons from "../Icons/Icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+const form = "https://docs.google.com/forms/d/e/1FAIpQLSfNL8pYiIKLvbamNEjI6HWFkxDVyEHpYY3ssuZVY5Lpn22Aaw/viewform?usp=sf_link"
 
 
 function Ticket() {
@@ -16,7 +17,7 @@ function Ticket() {
           className="w-[540px] lg:w-[1020px]"
         />
 
-        <Button text="Get Ticket" />
+        <Button text="Get Ticket" link={form} />
 
         <br />
 

@@ -3,7 +3,7 @@ import Nav from "../../components/NavBar/Nav";
 import AboutUs from "../../components/About Us/AboutUs";
 import aboutContent from "../../data/about";
 import Team from "../../components/Team/Team";
-import TeamBannerImage from "../../images/team.jpeg";
+import TeamBannerImage from "../../images/about.jpg";
 import Footer from "../../components/Footer/Footer";
 import { useEffect, useState } from "react";
 import { cardio } from "ldrs";
