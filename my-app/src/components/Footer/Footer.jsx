@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="flex place-content-center items-center flex-col p-[50px] font-rubik text-center space-y-6">
+    <div className="flex place-content-center relative items-center flex-col p-[50px] font-rubik text-center space-y-6">
       <p className="text-[20px]">
         “This independent TEDx event is operated under license from TED”
       </p>

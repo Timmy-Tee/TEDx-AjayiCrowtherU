@@ -58,6 +58,9 @@ code {
 .header {
   -webkit-text-stroke: 1px #dee2e63f;
 }
+.header2{
+  -webkit-text-stroke: 1px #db000094;
+}
 .card {
   background: linear-gradient(#1d1d1d05, #db000094);
 }
@@ -133,9 +136,10 @@ nav ul li a {
   backdrop-filter: blur(6px) saturate(147%);
   -webkit-backdrop-filter: blur(6px) saturate(147%);
 }
-.stickyNav a {
+.stickyNav ul li a {
   color: #000;
 }
+
 
 /* . ul{
   display: flex;

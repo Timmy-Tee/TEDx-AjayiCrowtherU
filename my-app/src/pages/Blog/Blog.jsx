@@ -25,13 +25,16 @@ function Blog() {
       try {
         const res = await axios.get("https://tedx-ajayicrowtheru.onrender.com/blogs/posts")
         setBlogData(res.data)
+        console.log(res.data)
       } catch (error) {
         console.log(error)
       }
     }
-    fetchData()
-
+    setInterval(()=>{
+      fetchData()
+    }, 10000)
   }, []);
+
 
   return (
     <div>
@@ -48,11 +51,10 @@ function Blog() {
 
         <div className="flex p-[20px]">
           <div className="mx-auto basis-full ">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
+          <div className="mx-auto grid max-w-2xl relative grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
             
-              {blogData.map((post) => {
-                return (
-                 
+              {blogData.length > 0 ? (
+                blogData.map((post) => (
                   <BlogCard
                     key={post._id}
                     id={post._id}
@@ -63,10 +65,16 @@ function Blog() {
                     blogPost={post.desc}
                     author={post.author}
                     job={post.job}
-                  />
-               
-                )
-              })}
+                  />   
+              ))
+              ):(
+                <div className="grid absolute w-full h-4 place-content-center p-5">
+                  <p className="text-center text-[30px] relative font-rubik">No Blogs Currently 😞</p>
+                </div>
+              )
+              
+              }
+
           </div>
           </div>
         </div>

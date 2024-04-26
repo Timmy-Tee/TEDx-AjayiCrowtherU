@@ -41,36 +41,36 @@ function Counter() {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4">
-      <div className="border p-[50px] grid place-content-center text-center">
+      <div className="p-[50px] grid place-content-center text-center">
         <b
-          className="counter_b font-beau font-bold tracking-[3px] text-[35px]"
+          className="counter_b font-rubik font-bold tracking-[3px] text-[35px]"
           id="day"
         >
           {day}
         </b>
         <p id="label">Days</p>
       </div>
-      <div className="border p-[50px] grid place-content-center text-center">
+      <div className="p-[50px] grid place-content-center text-center">
         <b
-          className="counter_b font-beau font-bold tracking-[3px] text-[35px]"
+          className="counter_b font-rubik font-bold tracking-[3px] text-[35px]"
           id="hour"
         >
           {hour}
         </b>
         <p id="hours">Hours</p>
       </div>
-      <div className="border p-[50px] grid place-content-center text-center">
+      <div className="p-[50px] grid place-content-center text-center">
         <b
-          className="counter_b font-beau font-bold tracking-[3px] text-[35px]"
+          className="counter_b font-rubik font-bold tracking-[3px] text-[35px]"
           id="minute"
         >
           {minute}
         </b>
         <p id="label">Minutes</p>
       </div>
-      <div className="border p-[50px] grid place-content-center text-center">
+      <div className="p-[50px] grid place-content-center text-center">
         <b
-          className="counter_b font-beau font-bold tracking-[3px] text-[35px]"
+          className="counter_b font-rubik font-bold tracking-[3px] text-[35px]"
           id="second"
         >
           {seconds}

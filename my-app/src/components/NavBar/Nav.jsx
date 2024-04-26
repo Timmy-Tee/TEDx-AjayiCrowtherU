@@ -3,6 +3,7 @@ import BlackNavlogo from "../../images/logo-black.png";
 import WhiteNavLogo from "../../images/logo-white.png";
 import { useState } from "react";
 import { faBars, faMultiply } from "@fortawesome/free-solid-svg-icons";
+import Button from "../Button/Button"
 
 function Nav() {
   const [navLogo, setLogo] = useState(WhiteNavLogo);
@@ -62,15 +63,19 @@ function Nav() {
             <li>
               <a href="/faq">FAQs</a>
             </li>
+            <li className="flex sm:hidden" >
+              <a href="/tickets">Get Tickets</a>
+            </li>
           </ul>
         </div>
-
         <FontAwesomeIcon
           icon={faBars}
           className="text-white hidden text-[25px] cursor-pointer"
           id="icon"
           onClick={menuOpen}
         />
+
+      <Button text="Get Ticket" mobile="hidden" desktop="flex" />
       </nav>
     </div>
   );

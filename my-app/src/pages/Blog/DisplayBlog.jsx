@@ -72,7 +72,7 @@ function DisplayBlog() {
                 </div>
               </div>
 
-              <div className="flex flex-col lg:flex-row lg:space-x-12 border">
+              <div className="flex flex-col lg:flex-row lg:space-x-12">
                 <div className="px-4 lg:px-0 mt-12 leading-[2.2] tracking-[1px] text-gray-600 w-full text-balance break-words ">
                   <p className="pb-6">{post.desc}</p>
                 </div>

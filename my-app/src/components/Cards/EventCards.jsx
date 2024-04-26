@@ -1,43 +1,32 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import events from "../../data/events";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import schedules from "../../data/schedules";
+import { ClockIcon } from '@heroicons/react/24/outline'   
+import TextHeader from "../TextHeader/TextHeader";
+import Button from "../Button/Button";
+const form = "https://docs.google.com/forms/d/e/1FAIpQLSfNL8pYiIKLvbamNEjI6HWFkxDVyEHpYY3ssuZVY5Lpn22Aaw/viewform?usp=sf_link"
 
 function EventCard() {
   return (
-    <div>
-      <div className="flex flex-col md:grid grid-cols-12 text-gray-50 ">
-        {events.map((event) => {
-          return (
-            <div className="flex md:contents ">
-              <div className="col-start-2 col-end-3 hidden md:mx-auto relative lg:flex place-content-center items-center">
-                <div className="h-full w-6 flex items-center justify-center">
-                  <div className="h-full w-1 bg-main-red pointer-events-none "></div>
-                </div>
-                <div className="w-[50px] h-[50px]  grid place-content-center absolute top-1/2 -mt-3 rounded-full bg-main-red shadow text-center">
-                  <p className="text-white text-xl font-rubik font-extrabold">
-                    {event.key}
-                  </p>
-                </div>
+    <div className=" p-3 mt-5">
+    <TextHeader main_header={"Event Schedule"} mini_header="Events" header/>
+    <div className="p-7 overflow-hidden lg:gap-4 lg:grid-cols-2 sm:grid sm:grid-cols-1 sm:gap-px sm:gap-y-4 sm:divide-y-0">
+      {schedules.map((schedule) => (
+          <div className="group flex flex-col p-14 place-content-center space-y-4 relative bg-[#ebedee] rounded-xl  hover:bg-second-red hover:text-white ease-in-out duration-300" key={schedule.title}>
+    
+              <div className="absolute rounded-bl-[100px] w-[100px] h-[100px] top-0 right-0 rounded-tr-xl bg-second-red text-white group-hover:bg-white group-hover:text-second-red grid place-content-center">
+              <p className="text-[40px] relative -right-[10px] -top-[10px] font-rubik font-bold"> {schedule.id} </p>
               </div>
 
-              <div className="bg-main-section col-start-3 col-end-12 p-6 rounded-xl my-4 mr-auto shadow-md w-full space-y-3">
-                <h3 className="font-semibold text-[20px] lg:text-[30px] mb-1 font-rubik uppercase tracking-wide text-second-red ">
-                  {event.title}
-                </h3>
-                <p className="leading-[1.7] tracking-[0.6px] break-keep text-[#231f20d3] ">
-                  {event.text}
-              <a href="https://tedxajayicrowtheru.com.ng" target="_blank" className="text-second-red"> See It All  <FontAwesomeIcon icon={faArrowRight} /> </a>
-                </p>
+              <p className="text-second-red flex font-rubik group-hover:text-white"> <ClockIcon className="h-6 w-6 mr-2"/> {schedule.time} </p>
+              <h1 className="text-[40px] font-bold font-rubik group-hover:text-white text-[#1c1f30]"> {schedule.title} </h1>
+              <p > {schedule.description} </p>
 
 
-                <p className="leading-tight text-[14px] text-justify w-full text-second-red font-rubik">
-                  {event.date}
-                </p>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+
+          </div>
+      ))}
+    </div>
     </div>
   );
 }

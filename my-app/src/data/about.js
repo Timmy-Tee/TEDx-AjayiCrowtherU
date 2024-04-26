@@ -13,6 +13,12 @@ const aboutContent = [
     position: "right",
     img: "hide_img",
   },
+  {
+    key: 3,
+    title: "TEDx AjayiCrowtherU",
+    text: `TedxAjayiCrowtherU is an independently organized event where Ted-like talks are been shared with the aim of assisting students to achieve excellence, not just academically but in other aspect of life. We at TedxAjayiCrowther University will be hosting transformational coaches and creativity experts who will enlighten us more in the world of creativity and also how to imbibe creativity in very skill you possess. It doesn’t stop there. We at TedxAjayiCrowtherU will be looking into the following aspect on the 6th May 2023: Business and Brand Strategy, Writing and Publishing, Brand Storytelling, Entrepreneurship, Leadership.`,
+    img: "hide_img",
+  },
 ];
 
 const home_details = aboutContent[0];
