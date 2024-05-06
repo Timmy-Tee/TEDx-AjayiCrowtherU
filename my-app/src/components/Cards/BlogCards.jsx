@@ -8,6 +8,7 @@ function BlogCard(e) {
           key={e.id}
           className="flex flex-col items-start justify-between shadow-lg"
           target="_blank"
+          rel="noreferrer"
         >
           <div className="relative w-full">
             <img

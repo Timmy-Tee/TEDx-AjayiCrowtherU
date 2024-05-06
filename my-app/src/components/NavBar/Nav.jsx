@@ -3,7 +3,6 @@ import BlackNavlogo from "../../images/logo-black.png";
 import WhiteNavLogo from "../../images/logo-white.png";
 import { useState } from "react";
 import { faBars, faMultiply } from "@fortawesome/free-solid-svg-icons";
-import Button from "../Button/Button"
 const form = "https://docs.google.com/forms/d/e/1FAIpQLSfNL8pYiIKLvbamNEjI6HWFkxDVyEHpYY3ssuZVY5Lpn22Aaw/viewform?usp=sf_link"
 
 function Nav() {

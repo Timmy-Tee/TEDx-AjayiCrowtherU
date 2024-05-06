@@ -1,15 +1,11 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import events from "../../data/events";
 import schedules from "../../data/schedules";
 import { ClockIcon } from '@heroicons/react/24/outline'   
 import TextHeader from "../TextHeader/TextHeader";
-import Button from "../Button/Button";
-const form = "https://docs.google.com/forms/d/e/1FAIpQLSfNL8pYiIKLvbamNEjI6HWFkxDVyEHpYY3ssuZVY5Lpn22Aaw/viewform?usp=sf_link"
 
 function EventCard() {
   return (
     <div className=" p-3 mt-5">
-    <TextHeader main_header={"Event Schedule"} mini_header="Events" header/>
+    <TextHeader main_header={"Event Schedule"} mini_header="Ev ents" header/>
     <div className="lg:p-7 sm:p-3 mt-6 overflow-hidden lg:gap-4 gap-8 lg:grid-cols-2 sm:grid sm:grid-cols-1">
       {schedules.map((schedule) => (
           <div className="group flex flex-col lg:p-10 place-content-center lg:space-y-4 p-8 space-y-5 relative bg-[#ebedee] rounded-xl  hover:bg-second-red hover:text-white ease-in-out duration-300" key={schedule.title}>

@@ -1,12 +1,4 @@
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import speakerData from "../../data/speakers";
-import Icons from "../../components/Icons/Icons";
 import Nav from "../../components/NavBar/Nav";
 import Banner from "../../components/Banner/Banner";
 import BannerImage from "../../images/speakersbg.jpg";
