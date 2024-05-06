@@ -16,6 +16,7 @@ function CardHolder(e) {
               twitter={data.twitter}
               linkedin={data.linkedin}
               facebook={data.facebook}
+              tiktok={data.tiktok}
             />
           );
         })}

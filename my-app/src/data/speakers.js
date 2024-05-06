@@ -1,7 +1,9 @@
-import Speaker1 from "../images/speakers/lolo4.jpg";
-import Speaker2 from "../images/speakers/hm7.jpg";
-import Speaker3 from "../images/speakers/ayodele_ajayi.jpg";
-import Speaker4 from "../images/speakers/drojo.jpg";
+import Speaker1 from "../images/speakers/lolo.png";
+import Speaker2 from "../images/speakers/Toluwani_George.JPEG";
+import Speaker3 from "../images/speakers/olumide_omotosho.jpg";
+import Speaker4 from "../images/speakers/ayodele_ajayi.jpg";
+import Speaker5 from "../images/speakers/hm7.jpg";
+import Speaker6 from "../images/speakers/drojo.jpg";
 
 const speakerData = [
   {
@@ -11,12 +13,26 @@ const speakerData = [
     job: "Actor|| Multi award winning Radio and TV Host || Comedienne || Mc || Dramatist",
     instagram: "https://www.instagram.com/officiallolo1/",
     twitter: "https://twitter.com/Officiallolo1",
-    // linkedin: "https://ng.linkedin.com/in/adebolawilliams",
+    facebook: "https://web.facebook.com/officiallolo1omotunde",
     about: ``,
   },
   {
-    key: 2,
+    key: 1,
     Image: Speaker2,
+    name: "Toluwani George",
+    job: "Actor & Model",
+    instagram: "https://www.instagram.com/toluwanigeorge/",
+    twitter: "https://twitter.com/ToluwaniGeorge_",
+    tiktok: "https://www.tiktok.com/@toluwanigeorge",
+    about: `Toluwani George, is a model and actress from Nigeria, gained recognition for her role as Eve in the Showmax telenovela "Wura." Born in Ibadan but half- Lebanese, Toluwani started her career in modeling before venturing into acting.
+
+Her strong foundation in the fashion world seamlessly transitioned into acting, with her academic background from the University of Ibadan providing her with a well-rounded perspective. Toluwani George approaches her acting career with a unique blend of artistic talent and intellectual prowess.
+
+Her breakthrough came with the role of Eve in Showmax's popular Telenovela, "Wura," where her exceptional performance resonated with audiences. Toluwani George's portrayal of Eve showcased her depth and authenticity, solidifying her presence in the acting realm.`,
+  },
+  {
+    key: 2,
+    Image: Speaker5,
     name: "Hannah Moses",
     job: "CEO Elizto World",
     instagram: "https://www.instagram.com/_hannahmoses1/",
@@ -36,8 +52,18 @@ const speakerData = [
     `,
   },
   {
-    key: 3,
+    key: 1,
     Image: Speaker3,
+    name: "Olumide Omotoso",
+    job: "Software Engineer",
+    instagram: "https://www.instagram.com/oluomotoso/",
+    twitter: "https://twitter.com/oluomotoso",
+    linkedin: "https://www.linkedin.com/in/oluomotoso/",
+    about: `Olumide Omotoso is a software engineer and a graduate of Obafemi Awolowo University, where he earned a degree in Materials Science and Engineering. He is the Founder and CEO of ByteLabs Technologies Ltd, where he has spearheaded the development of cutting-edge solutions that streamline complex processes across fintech and telecommunications. His entrepreneurial ventures include the creation of Loftysms, an application-to-person SMS platform that has delivered over a billion messages, serving notable clients like the Lagos State Government. ByteLabs's innovative financial platform, Watu, processes hundreds of thousands of transactions monthly and achieved a remarkable milestone of processing over 1 trillion naira in transactions in Q1 2024. His portfolio also includes PayLabs, an international payment solution; Banka, a versatile core banking software for white-label fintech products; Billa, a centralized bill payment hub; and Winfest, an advanced paid voting management system. Olumide's work is driven by a passion for deploying technology to foster financial inclusion and improve digital communication, significantly impacting the sectors he touches.`,
+  },
+  {
+    key: 3,
+    Image: Speaker4,
     name: "Ayodele Ajayi",
     job: "Managing Director at The Wash Room Limited",
     instagram: "https://www.instagram.com/iam_oluwagallant/",
@@ -65,13 +91,59 @@ const speakerData = [
   },
   {
     key: 4,
-    Image: Speaker4,
+    Image: Speaker6,
     name: "Dr Cornelius Segun Ojo",
     job: "Lecturer at Ajayi Crowther University",
     facebook: "https://www.facebook.com/corneliussegun.ojo.5",
     // instagram: "https://www.instagram.com/your_writingcamp/",
     // linkedin: "https://twitter.com/Inemesit_hanson",
-    about: `Dr Cornelius Segun Ojo is a member of the teaching staff in the Faculty of Communication and Media Studies, Ajayi Crowther University, Oyo, Oyo State, Nigeria. He is a product of the University of Lagos where he studied Mass Communication at Bachelor and Master levels respectively (1999 and 2002). He also attended University of Sussex, UK where he bagged a doctorate degree in Media and Cultural Studies (2015). Dr. Ojo’s work experiences cut across public and private sectors; as well as being involved in civil society activities. For over 20 years, he has been contributing to the op-ed pages of notable national newspapers. His research interests are in the areas of media and society, political communication and journalism studies.`,
+    about: `Dr Cornelius Segun Ojo is a member of the teaching staff in the Faculty of Communication and Media Studies, Ajayi Crowther University, Oyo, Oyo State, Nigeria. He is a product of the University of Lagos where he studied Mass Communication at Bachelor and Master levels respectively (1999 and 2002). He also attended University of Sussex, UK where he bagged a doctorate degree in Media and Cultural Studies (2015). Dr. Ojo’s work experiences cut across public and private sectors; as well as his involvement in civil society activities. He was the Publicity Secretary of the Committee for the Defence of Human Rights (cdhr) during his university days at the University of Lagos.
+ 
+ In 2014, he participated in a high impact conference in the School of Global Studies, University of Sussex, titled "AFRICOM: What Future Does it Hold for Africa!". His contribution at the conference was to challenge the American leaders on their military expansionist agenda in Africa, admonishing that an attempt to site an American military base in Nigeria will spell doom for Nigeria's security and the wider sub-region.
+ 
+ In recent times, he has participated in and delivered papers at conferences both in Nigeria and overseas including: "Symposium on African Journalism Education in the Post COVID-19 Digital Era", at the Pan Atlantic University, Lagos, Nigeria (March, 2023), 
+ 
+ "VII-International European Conference on Interdisciplinary Scientific Research", Frankfurt , Germany (March, 2023), 
+ 
+ "6th International Conference on Innovative Studies of Contemporary Sciences", Tokyo, Japan (August, 2023),
+ 
+ "International Conference on Media and Sustainable Development in Africa", Centre for Media and Communication Research (CMCR), Pan Atlantic University, Lagos, Nigeria (July, 2022) among others.
+ 
+ In linking the 'gown with the town', Dr. Ojo delivered a seminar paper titled "Faithful Editors: Editing Church Printed Materials", to the Publication Team of Lighthouse International Christian Centre, Samonda, Ibadan (February, 2022); and another paper titled: "Despite Nigeria's Annual Production of Graduates, Unemployment Rate Increases by the Day: Which Way Forward", to mark the 30th Anniversary of Oritamefa Anglican Grammar School Old Students' Association, Felele, Ibadan, Nigeria (December, 2022).
+ 
+ His researched works and articles have appeared in learned journals and conference proceedings, including: 
+ 
+ "Rethinking Citizen Journalism: Twitter Ban, Citizens' Furry and the Patriotism Question in Nigeria" ACU Journal of Social and Management Sciences (2022),
+ 
+ "Influence of Celebrity Endorsement on Consumer Patronage of Globacom Services". Media and Communication Review, Lagos State University, Nigeria (2023), 
+ 
+ "Pattern of Online and Hard Copy Newspaper Readership: Is the Printed Matter Vanishing? Time Will Tell" published proceedings of International Asian Congress on Contemporary Sciences-VI, Van, Turkey, May, 2022; 
+ 
+ "Exploring Social Media (Twitter) as a Platform for Political Activism and Cognizance: A Study of "ENDSARS" Movement in Nigeria" published proceedings of VII-International European Conference on Interdisciplinary Scientific Research, Frankfurt, Germany (2023) among others.
+  
+ Dr. Ojo has also contributed to book chapters: 
+ 
+ "BBC Yoruba: Cultural Imperialism Revisited - Towards a National Media Literacy Culture in Nigeria (2023) and, 
+ 
+ "Hate Speech: An Ethico-Legal Analysis in Media Theory and Practice" (2023). 
+ 
+ He co-edits an interdisciplinary law book titled: Ajayi Crowther University Selected Themes on Public and International Law" (2023).
+ 
+ He is part of a team that recently won the University's Governing Council grant to conduct a research on Voter Apparty in southwest, Nigeria. 
+ 
+ As a believer in, and a promoter in community development as a catalyst for national development, Dr Ojo is currently a patron to two NGOs: G6 Royal Elite Club - a social and charity club of Nigerians in the six continents of the world, committed to uplifting the standards of living of people in needs and, Made To Love International (MTLI), an NGO being run by enthusiastic young recent graduates from Ajayi Crowther University, who are committed to helping young people to grow in confidence,  discover and nurture their talents.
+ 
+ As a believer in development of talents of his students, Dr Ojo has nominated,  mentored and supervised creative works of two Ajayi Crowther University Students' for an annual international competition - Future Creative Leaders Academy (FCLA), who then won Roger Hatchuel Student Academy (RHSA) prize and are funded to attend Cannes Lion Festival of Creativity, Cannes, France (2022) and (June, 2024 -upcoming).
+ 
+ In his attempt to assist final year students to overcome challenges associated with conducting final year research projects (dissertation), Dr Ojo currently produces and anchors a weekly educational radio programme "Research Half Hour" on Crowther 88.5 FM
+ 
+ Awards received in recent times include: "Special recognition" award by Ajayi Crowther University Students' Assembly (ACUSA), 2022;    
+ 
+ "An Exemplary Leader, a Teacher, Mentor, Father and Friend" award by Ajayi Crowther University Students' Assembly (ACUSA), 2023 and,
+ 
+ "Excellence Benevolence Award" by Sir Olubi Memoria Anglican Church, Okota, Lagos (2021).
+ 
+ For over 20 years, he has been contributing to the op-ed pages of notable national newspapers on issues of national importance. His research interests are in the areas of media and society, political communication and journalism studies.`,
   },
 ];
 const speakerTitle = {

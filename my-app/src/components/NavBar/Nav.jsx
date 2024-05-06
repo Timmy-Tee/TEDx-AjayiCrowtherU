@@ -4,6 +4,7 @@ import WhiteNavLogo from "../../images/logo-white.png";
 import { useState } from "react";
 import { faBars, faMultiply } from "@fortawesome/free-solid-svg-icons";
 import Button from "../Button/Button"
+const form = "https://docs.google.com/forms/d/e/1FAIpQLSfNL8pYiIKLvbamNEjI6HWFkxDVyEHpYY3ssuZVY5Lpn22Aaw/viewform?usp=sf_link"
 
 function Nav() {
   const [navLogo, setLogo] = useState(WhiteNavLogo);
@@ -63,8 +64,8 @@ function Nav() {
             <li>
               <a href="/faq">FAQs</a>
             </li>
-            <li className="flex sm:hidden" >
-              <a href="/tickets">Get Tickets</a>
+            <li >
+              <a href={form}>Get Tickets</a> 
             </li>
           </ul>
         </div>
@@ -75,7 +76,6 @@ function Nav() {
           onClick={menuOpen}
         />
 
-      <Button text="Get Ticket" mobile="hidden" desktop="flex" />
       </nav>
     </div>
   );

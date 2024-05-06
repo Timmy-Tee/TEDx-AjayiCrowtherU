@@ -21,7 +21,7 @@ function About(e) {
             alt="Next Images Black And Red"
             className="w-[160px]"
           />
-          <h1 className="font-rubik text-[40px] uppercase text-text-header font-bold">
+          <h1 className="font-rubik lg:text-[40px] text-[35px] uppercase text-text-header font-bold">
             {e.title}
           </h1>
         </div>

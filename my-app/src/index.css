@@ -136,10 +136,12 @@ nav ul li a {
   backdrop-filter: blur(6px) saturate(147%);
   -webkit-backdrop-filter: blur(6px) saturate(147%);
 }
-.stickyNav ul li a {
+.stickyNav a {
   color: #000;
 }
-
+.stickyNav button{
+  color: white
+}
 
 /* . ul{
   display: flex;

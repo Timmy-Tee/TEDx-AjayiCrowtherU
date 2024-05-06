@@ -9,15 +9,15 @@ import speakerData from "../../data/speakers";
 import Icons from "../../components/Icons/Icons";
 import Nav from "../../components/NavBar/Nav";
 import Banner from "../../components/Banner/Banner";
-import BannerImage from "../../images/speakersbg.jpg"
-
+import BannerImage from "../../images/speakersbg.jpg";
+import Cards from "../../components/Cards/Cards";
 
 function AboutSpeakers() {
   return (
     <div className="">
       <Nav />
 
-      <Banner image={BannerImage}/>
+      <Banner image={BannerImage} />
 
       <section className="bg-white ">
         <div className="grid p-[10px] grid-cols-1 lg:mx-0 gap-6 lg:max-w-none lg:grid-cols-2 place-content-center items-center pre-wrap">
@@ -30,63 +30,22 @@ function AboutSpeakers() {
                   key={speaker.key}
                 >
                   <figure className=" flex flex-auto flex-col justify-between ">
-                    <figcaption className="mb-5 flex xl:flex-row flex-col text-center items-center gap-x-6 space-y-5 lg:space-y-0">
-                      <img
-                        className="w-[350px] aspect-auto rounded-lg bg-gray-50"
-                        src={speaker.Image}
-                        alt={speaker.name}
-                      />
-
-                      <div className="text-base flex flex-col  place-content-center items-center">
-                        <div className="font-semibold text-gray-900 font-rubik text-lg">
-                          {speaker.name}
-                        </div>
-                        <div className="mt-1 text-gray-500 font-rubik">
-                          {speaker.job}
-                        </div>
-                        <br />
-
-                      {
-                        speaker.facebook ? 
-                      (
-                        <Icons
-                          link1={speaker.instagram}
-                          icon1=<FontAwesomeIcon icon={faInstagram} className="text-[20px]" />
-                          link2={speaker.linkedin}
-                          icon2=<FontAwesomeIcon icon={faLinkedin} className="text-[20px]" />
-                          link3={speaker.facebook}
-                          icon3=<FontAwesomeIcon icon={faFacebook} className="text-[20px]" />
-                        />
-                      )
+                    <figcaption className="mb-5 flex place-content-center xl:flex-row flex-col items-center gap-x-6 space-y-5 lg:space-y-0">
                       
-                      :
-                        !speaker.linkedin ? (
-                        (
-                        <Icons
-                          link1={speaker.instagram}
-                          icon1=<FontAwesomeIcon icon={faInstagram} className="text-[20px]" />
 
-                         display2="none"
+                      <div className="lg:w-[50%] w-full grid place-content-center overflow-hidden rounded-3xl ">
 
-                          link3={speaker.twitter}
-                          icon3=<FontAwesomeIcon icon={faTwitter} className="text-[20px]" />
+                        <Cards
+                          key={speaker.key}
+                          image={speaker.Image}
+                          name={speaker.name}
+                          job={speaker.job}
+                          instagram={speaker.instagram}
+                          twitter={speaker.twitter}
+                          linkedin={speaker.linkedin}
+                          facebook={speaker.facebook}
+                          tiktok={speaker.tiktok}
                         />
-                      )                      
-                      )
-                        
-                        : 
-                        (
-                        <Icons
-                          link1={speaker.instagram}
-                          icon1=<FontAwesomeIcon icon={faInstagram} className="text-[20px]" />
-                          link2={speaker.linkedin}
-                          icon2=<FontAwesomeIcon icon={faLinkedin} className="text-[20px]" />
-                          link3={speaker.twitter}
-                          icon3=<FontAwesomeIcon icon={faTwitter} className="text-[20px]" />
-                        />
-                      )
-                      }
-                       
                       </div>
                     </figcaption>
 
