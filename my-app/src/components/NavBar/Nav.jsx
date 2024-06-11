@@ -3,7 +3,6 @@ import BlackNavlogo from "../../images/logo-black.png";
 import WhiteNavLogo from "../../images/logo-white.png";
 import { useState } from "react";
 import { faBars, faMultiply } from "@fortawesome/free-solid-svg-icons";
-const form = "https://docs.google.com/forms/d/e/1FAIpQLSfNL8pYiIKLvbamNEjI6HWFkxDVyEHpYY3ssuZVY5Lpn22Aaw/viewform?usp=sf_link"
 
 function Nav() {
   const [navLogo, setLogo] = useState(WhiteNavLogo);
@@ -55,16 +54,13 @@ function Nav() {
               <a href="/blog">Blog</a>
             </li>
             <li>
-              <a href="/events">Events</a>
+              <a href="/events">Event</a>
             </li>
             <li>
               <a href="/gallery">Gallery</a>
             </li>
             <li>
               <a href="/faq">FAQs</a>
-            </li>
-            <li >
-              <a href={form}>Get Tickets</a> 
             </li>
           </ul>
         </div>

@@ -21,20 +21,21 @@ function Blog() {
 
   // Get Data
   useEffect(() => {
-    const fetchData = async()=>{
-      try {
-        const res = await axios.get("https://tedx-ajayicrowtheru.onrender.com/blogs/posts")
-        setBlogData(res.data)
-        console.log(res.data)
-      } catch (error) {
-        console.log(error)
-      }
-    }
+    fetchData()
     setInterval(()=>{
       fetchData()
-    }, 10000)
+    }, 1000)
   }, []);
 
+  const fetchData = async()=>{
+    try {
+      const res = await axios.get("https://tedx-ajayicrowtheru.onrender.com/blogs/posts")
+      setBlogData(res.data)
+      console.log(res.data)
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     <div>

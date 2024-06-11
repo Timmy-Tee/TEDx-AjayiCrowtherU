@@ -17,7 +17,6 @@ function Ticket() {
           className="w-[540px] lg:w-[1020px]"
         />
 
-        <Button text="Get Ticket" link={form} />
 
         <br />
 
