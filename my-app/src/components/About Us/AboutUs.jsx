@@ -1,13 +1,14 @@
 import Next_Black_Red from "../../images/specifics/Black and Red.png";
 import Lady_dancing from "../../images/specifics/pngwing.com (14).png";
 import Man_sitting from "../../images/specifics/pngwing.com (15).png";
+import Assets1 from "../../images/specifics/assets1.png"
 
 function About(e) {
   return (
     <div className="bg-main-section flex place-content-center items-center flex-col relative lg:p-[50px] sm:p-[20px]">
       <div className="lg:mb-0 mb-[150px]">
         <img
-          src={Lady_dancing}
+          src={Assets1}
           alt="Dancing"
           className="w-[102px] absolute p-[10px] left-[10px] top-[10px] "
         />

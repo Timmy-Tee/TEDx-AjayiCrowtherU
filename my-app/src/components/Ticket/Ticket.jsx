@@ -9,7 +9,7 @@ const form = "https://docs.google.com/forms/d/e/1FAIpQLSfNL8pYiIKLvbamNEjI6HWFkx
 
 function Ticket() {
   return (
-    <div className="ticket relative w-full bg-ticketBanner bg-center bg-cover bg-no-repeat h-[100vh] flex place-content-center items-center">
+    <div className="ticket relative w-full bg-ticketBanner bg-center bg-cover bg-no-repeat h-[80vh] flex place-content-center items-center">
       <div className="relative flex max-w-3xl flex-col items-center text-center ">
         <img
           src={Logo_white_red}

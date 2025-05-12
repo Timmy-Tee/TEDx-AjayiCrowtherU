@@ -3,7 +3,7 @@ import HomeBanner from "../../components/Banner/HomeBanner";
 import About from "../../components/About Us/AboutUs";
 import { home_details } from "../../data/about";
 import Speakers from "../../components/Speakers/Speakers";
-import Countdown from "../../components/Countdown/Countdown";
+import Countdown from "../../components/Countdown/Counter";
 import Ticket from "../../components/Ticket/Ticket";
 import Footer from "../../components/Footer/Footer";
 import { useEffect, useState } from "react";
@@ -28,7 +28,7 @@ function Home() {
         </div>
       ) : (
         <div>
-          <Nav />
+          {/* <Nav /> */}
           <HomeBanner />
           <About title={home_details.title} paragraph={home_details.text} />
           <Speakers />

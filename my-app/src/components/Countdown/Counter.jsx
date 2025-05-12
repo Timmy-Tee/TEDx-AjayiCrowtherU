@@ -5,7 +5,7 @@ function Counter() {
   const [hour, setHour] = useState("00");
   const [minute, setMinute] = useState("00");
   const [seconds, setSeconds] = useState("00");
-  const deadline = new Date("May 18, 2024 9:00:00").getTime();
+  const deadline = new Date("May 17, 2025 9:00:00").getTime();
 
   const checkTime = (e) => {
     if (e < 10) {
