@@ -1,6 +1,4 @@
-import Next_Black_Red from "../../images/specifics/Black and Red.png";
-import Lady_dancing from "../../images/specifics/pngwing.com (14).png";
-import Man_sitting from "../../images/specifics/pngwing.com (15).png";
+import Next_Black_Red from "../../images/OYSLogo3.png";
 import Assets1 from "../../images/specifics/assets1.png"
 
 function About(e) {
@@ -22,7 +20,7 @@ function About(e) {
             alt="Next Images Black And Red"
             className="w-[160px]"
           />
-          <h1 className="font-rubik lg:text-[40px] text-[35px] uppercase text-text-header font-bold">
+          <h1 className="font-rubik lg:text-[40px] text-[35px] uppercase text-black font-bold">
             {e.title}
           </h1>
         </div>
@@ -37,7 +35,7 @@ function About(e) {
 
       <div className="lg:mb-0 mb-[90px] border">
         <img
-          src={Man_sitting}
+          src={Assets1}
           alt=""
           className="w-[102px] absolute p-[10px] bottom-[10px] right-[10px]"
         />

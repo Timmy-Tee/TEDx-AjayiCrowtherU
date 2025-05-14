@@ -116,6 +116,8 @@ nav ul li a {
   transition: 0.3s all ease-in;
   padding: 10px 15px;
   margin: 5px;
+  /* color: #d62828; */
+  
 }
 
 .stickyNav {

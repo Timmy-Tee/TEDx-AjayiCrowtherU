@@ -4,14 +4,14 @@ import Team3 from "../images/team/princess.jpeg";
 import Team4 from "../images/team/ewa.jpeg";
 import Team5 from "../images/team/ifeoluwani.jpeg";
 import Team6 from "../images/team/tunmise.jpeg";
-import Team7 from "../images/team/timmy1.jpg";
+import Team7 from "../images/team/joy.jpeg";
 import Team8 from "../images/team/suprise.jpeg";
 import Team9 from "../images/team/evidence.jpeg";
 import Team10 from "../images/team/ara.jpg";
 import Team11 from "../images/team/ifeoluwa.jpeg";
 import Team12 from "../images/team/oreoluwa.jpeg";
 import Team13 from "../images/team/collins.jpeg";
-import Team14 from "../images/team/arike.jpg";
+import Team14 from "../images/team/timi.jpeg";
 
 
 
