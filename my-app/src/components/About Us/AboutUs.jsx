@@ -18,7 +18,7 @@ function About(e) {
             id={e.img}
             src={Next_Black_Red}
             alt="Next Images Black And Red"
-            className="w-[160px]"
+            className="w-[50px]"
           />
           <h1 className="font-rubik lg:text-[40px] text-[35px] uppercase text-black font-bold">
             {e.title}

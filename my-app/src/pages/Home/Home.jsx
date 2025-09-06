@@ -28,7 +28,7 @@ function Home() {
         </div>
       ) : (
         <div>
-          {/* <Nav /> */}
+          <Nav />
           <HomeBanner />
           <About title={home_details.title} paragraph={home_details.text} />
           <Speakers />

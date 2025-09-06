@@ -4,7 +4,7 @@ const schedules = [
      {
       id: 1,
        title: 'Arrival',
-       time: "10:00am",
+       time: "9:00am",
        description: `Red-carpet, Registration and Breakfast Reception`,
      },
      {
