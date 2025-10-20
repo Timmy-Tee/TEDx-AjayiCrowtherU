@@ -1,5 +1,5 @@
 import Speaker1 from "../images/speakers/temidayo.jpeg";
-import Speaker2 from "../images/speakers/Adeoluwa .jpeg";
+import Speaker2 from "../images/speakers/Adeoluwa.jpeg";
 import Speaker3 from "../images/speakers/Joey.jpeg";
 import Speaker4 from "../images/speakers/Toluwanimi.jpeg";
 import Speaker5 from "../images/speakers/Blessing.jpeg";

@@ -32,8 +32,8 @@ function Home() {
           <HomeBanner />
           <About title={home_details.title} paragraph={home_details.text} />
           <Speakers />
-          <Countdown />
-          <Ticket />
+          {/* <Countdown /> */}
+          {/* <Ticket /> */}
           <Footer />
         </div>
       )}

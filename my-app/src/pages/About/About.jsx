@@ -3,7 +3,7 @@ import Nav from "../../components/NavBar/Nav";
 import AboutUs from "../../components/About Us/AboutUs";
 import aboutContent from "../../data/about";
 import Team from "../../components/Team/Team";
-import TeamBannerImage from "../../images/Final.jpg";
+import TeamBannerImage from "../../images/about.JPG";
 import Footer from "../../components/Footer/Footer";
 import { useEffect, useState } from "react";
 import { cardio } from "ldrs";
@@ -30,10 +30,10 @@ function About() {
           <Nav />
           <Banner image={TeamBannerImage} />
 
-          {aboutContent.map((content) => {
+          {aboutContent.map((index,content) => {
             return (
               <AboutUs
-              key={content.key}
+              key={index}
                 title={content.title}
                 paragraph={content.text}
                 position={content.position}

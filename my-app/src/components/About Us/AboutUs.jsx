@@ -3,7 +3,7 @@ import Assets1 from "../../images/specifics/assets1.png"
 
 function About(e) {
   return (
-    <div className="bg-main-section flex place-content-center items-center flex-col relative lg:p-[50px] sm:p-[20px]">
+    <div className="bg-main-section flex place-content-center font-rubik items-center flex-col relative lg:p-[50px] sm:p-[20px]">
       <div className="lg:mb-0 mb-[150px]">
         <img
           src={Assets1}
