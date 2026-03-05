@@ -32,7 +32,7 @@ function Gallery() {
           <div class="p-5 sm:p-8">
             <div class="mt-20 columns-1 gap-5 sm:columns-1 sm:gap-8 md:columns-3 lg:columns-3 [&>img:not(:first-child)]:mt-4">
               {images.map((image) => {
-                return <img src={image.image} alt="People" key={image.key}/>;
+                return <img src={image.image} alt="People" key={image.image}/>;
               })}
             </div>
           </div>

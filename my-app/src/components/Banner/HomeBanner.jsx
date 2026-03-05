@@ -1,21 +1,13 @@
-import BannerImage from "../../images/log.png";
+import BannerImage from "../../images/background.png";
 
 function HomeBanner() {
   return (
-    <div className="w-full h-[100vh]  flex">
-      {/* Left Side */}
-      <div className="left-side basis-6/12 bg-homeBanner bg-center bg-no-repeat bg-cover relative hidden sm:hidden lg:flex "></div>
-      {/* Left Side */}
-
-      {/* Right Side */}
-      <div className="basis-full grid place-content-center bg-banner lg:basis-[60%] ">
-        <img
-          src={BannerImage}
-          alt="Team Logo with African Face"
-          className="lg:w-[650px] w-[350px]"
-        />
-      </div>
-      {/* Right Side */}
+    <div className="flex flex-col lg:justify-end justify-center items-center relative p-5 bg-black text-white h-screen overflow-hidden font-rubik" style={{ backgroundImage: `url(${BannerImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      
+      
+      <div className="absolute inset-0 bg-[#000000a0]  pointer-events-none"></div>
+    
+    
     </div>
   );
 }

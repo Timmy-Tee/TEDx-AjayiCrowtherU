@@ -13,13 +13,13 @@ function AboutSpeakers() {
 
       <section className="bg-white ">
         <div className="grid p-[10px] grid-cols-1 lg:mx-0 gap-6 lg:max-w-none lg:grid-cols-2 place-content-center items-center pre-wrap">
-          {speakerData.map((speaker) => {
+          {speakerData.map((speaker, index) => {
             return (
               <div>
                 {/* To be mapped */}
                 <div
                   className="flex place-content-center items-center flex-col p-6  border rounded-lg "
-                  key={speaker.key}
+                  key={index}
                 >
                   <figure className=" flex flex-auto flex-col justify-between ">
                     <figcaption className="mb-5 flex place-content-center xl:flex-row flex-col items-center gap-x-6 space-y-5 lg:space-y-0">

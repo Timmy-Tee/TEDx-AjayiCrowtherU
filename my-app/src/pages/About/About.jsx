@@ -33,7 +33,7 @@ function About() {
           {aboutContent.map((content) => {
             return (
               <AboutUs
-              key={content.key}
+              key={content.title}
                 title={content.title}
                 paragraph={content.text}
                 position={content.position}

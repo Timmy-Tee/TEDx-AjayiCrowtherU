@@ -14,16 +14,16 @@ function DisplayBlog() {
         setBlog([res.data]);
     };
     getPost();
-  }, []);
+  });
 
   return (
     <div className="flex place-content-center flex-col">
-      {blog.map((post) => {
+      {blog.map((index,post) => {
         return (
           <div className=" flex place-content-center " >
             <div className="mt-10 w-[90%]">
               <div className="mb-4 md:mb-0 w-full mx-auto relative">
-                <div className="lg:px-0 lg:flex lg:flex-col" key={post._id}>
+                <div className="lg:px-0 lg:flex lg:flex-col" key={index}>
                   <a
                     href="https://tedx-ajayicrowtheru.vercel.app/blog"
                     className="px-3 py-3 lg:w-[15%] w-[50%] text-center text-gray-100 bg-main-red flex items-center justify-center rounded"

@@ -5,7 +5,7 @@ function Counter() {
   const [hour, setHour] = useState("00");
   const [minute, setMinute] = useState("00");
   const [seconds, setSeconds] = useState("00");
-  const deadline = new Date("May 18, 2024 9:00:00").getTime();
+  const deadline = new Date("May 17, 2025 9:00:00").getTime();
 
   const checkTime = (e) => {
     if (e < 10) {
@@ -40,42 +40,46 @@ function Counter() {
   getTime();
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4">
-      <div className="p-[50px] grid place-content-center text-center">
-        <b
-          className="counter_b font-rubik font-bold tracking-[3px] text-[35px]"
-          id="day"
-        >
-          {day}
-        </b>
-        <p id="label">Days</p>
-      </div>
-      <div className="p-[50px] grid place-content-center text-center">
-        <b
-          className="counter_b font-rubik font-bold tracking-[3px] text-[35px]"
-          id="hour"
-        >
-          {hour}
-        </b>
-        <p id="hours">Hours</p>
-      </div>
-      <div className="p-[50px] grid place-content-center text-center">
-        <b
-          className="counter_b font-rubik font-bold tracking-[3px] text-[35px]"
-          id="minute"
-        >
-          {minute}
-        </b>
-        <p id="label">Minutes</p>
-      </div>
-      <div className="p-[50px] grid place-content-center text-center">
-        <b
-          className="counter_b font-rubik font-bold tracking-[3px] text-[35px]"
-          id="second"
-        >
-          {seconds}
-        </b>
-        <p id="label">Seconds</p>
+    <div className="border flex flex-col items-center justify-center py-[70px] gap-4">
+      <b className="w-full font-[Agile] text-center">COUNT-DOWN TO TEDx AjayiCrowtherU</b>
+
+      <div className="grid grid-cols-1 lg:grid-cols-4 w-[90%] border border-red-500">
+        <div className="p-[50px] grid place-content-center text-center">
+          <b
+            className="counter_b font-rubik font-bold tracking-[3px] text-[35px]"
+            id="day"
+          >
+            {day}
+          </b>
+          <p id="label">Days</p>
+        </div>
+        <div className="p-[50px] grid place-content-center text-center">
+          <b
+            className="counter_b font-rubik font-bold tracking-[3px] text-[35px]"
+            id="hour"
+          >
+            {hour}
+          </b>
+          <p id="hours">Hours</p>
+        </div>
+        <div className="p-[50px] grid place-content-center text-center">
+          <b
+            className="counter_b font-rubik font-bold tracking-[3px] text-[35px]"
+            id="minute"
+          >
+            {minute}
+          </b>
+          <p id="label">Minutes</p>
+        </div>
+        <div className="p-[50px] grid place-content-center text-center">
+          <b
+            className="counter_b font-rubik font-bold tracking-[3px] text-[35px]"
+            id="second"
+          >
+            {seconds}
+          </b>
+          <p id="label">Seconds</p>
+        </div>
       </div>
     </div>
   );

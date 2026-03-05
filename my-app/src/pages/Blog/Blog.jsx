@@ -7,35 +7,26 @@ import Footer from "../../components/Footer/Footer";
 import { useEffect, useState } from "react";
 
 function Blog() {
-  const [loader, setLoader] = useState(false);
-  const [blogData, setBlogData] = useState([]);
+ const [loader, setLoader] = useState(false);
+const [blogData, setBlogData] = useState([]);
 
-  // Loader
-  useEffect(() => {
-    setLoader(true);
-    setInterval(() => {
-      setLoader(false);
-    }, 2000);
-  }, []);
-  // Loader
-
-  // Get Data
-  useEffect(() => {
-    fetchData()
-    setInterval(()=>{
-      fetchData()
-    }, 1000)
-  }, []);
-
-  const fetchData = async()=>{
-    try {
-      const res = await axios.get("https://tedx-ajayicrowtheru.onrender.com/blogs/posts")
-      setBlogData(res.data)
-      console.log(res.data)
-    } catch (error) {
-      console.log(error)
-    }
+const fetchData = async () => {
+  setLoader(true);
+  try {
+    const res = await axios.get("https://tedx-ajayicrowtheru.onrender.com/blogs/posts");
+    setBlogData(res.data);
+    console.log(res.data);
+  } catch (error) {
+    console.log(error);
+  } finally {
+    setLoader(false);
   }
+};
+
+useEffect(() => {
+  fetchData();
+}, []); 
+
 
   return (
     <div>

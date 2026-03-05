@@ -3,8 +3,8 @@ import HomeBanner from "../../components/Banner/HomeBanner";
 import About from "../../components/About Us/AboutUs";
 import { home_details } from "../../data/about";
 import Speakers from "../../components/Speakers/Speakers";
-import Countdown from "../../components/Countdown/Countdown";
-import Ticket from "../../components/Ticket/Ticket";
+//import Countdown from "../../components/Countdown/Counter";
+//import Ticket from "../../components/Ticket/Ticket";
 import Footer from "../../components/Footer/Footer";
 import { useEffect, useState } from "react";
 import { cardio } from "ldrs";
@@ -32,8 +32,8 @@ function Home() {
           <HomeBanner />
           <About title={home_details.title} paragraph={home_details.text} />
           <Speakers />
-          <Countdown />
-          <Ticket />
+          {/* <Countdown /> */}
+          {/* <Ticket /> */}
           <Footer />
         </div>
       )}

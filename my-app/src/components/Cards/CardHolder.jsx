@@ -1,6 +1,8 @@
 import Cards from "./Cards";
 
 function CardHolder(e) {
+  console.log(`This is the value of E in the sate Holder ${e.dataProps}`)
+
   return (
     <div className=" ">
       <div className="grid grid-cols-1 w-full md:grid-cols-2 md:gap-x-3 lg:grid-cols-3 lg:gap-x-4 lg:gap-y-3 gap-y-5  ">
@@ -8,7 +10,7 @@ function CardHolder(e) {
           return (
 
             <Cards
-              key={data.key}
+              key={data.name}
               image={data.Image}
               name={data.name}
               job={data.job}

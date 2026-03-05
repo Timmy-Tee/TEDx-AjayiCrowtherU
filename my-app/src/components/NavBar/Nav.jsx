@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BlackNavlogo from "../../images/logo-black.png";
 import WhiteNavLogo from "../../images/logo-white.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { faBars, faMultiply } from "@fortawesome/free-solid-svg-icons";
 
 function Nav() {
-  const [navLogo, setLogo] = useState(WhiteNavLogo);
+const [navLogo, setLogo] = useState(WhiteNavLogo);
 
   const menuOpen = () => {
     document.getElementById("navLinks").style.display = "flex";
@@ -14,24 +14,31 @@ function Nav() {
     document.getElementById("navLinks").style.display = "none";
   };
 
-  const changeNav = () => {
-    window.addEventListener("scroll", () => {
+  useEffect(() => {
+    const handleScroll = () => {
       let navBar = document.querySelector("nav");
-      navBar.classList.toggle("stickyNav", window.scrollY > 40);
+      if (navBar) {
+        navBar.classList.toggle("stickyNav", window.scrollY > 40);
 
-      if (window.scrollY > 40) {
-        setLogo(BlackNavlogo);
-      } else {
-        setLogo(WhiteNavLogo);
+        if (window.scrollY > 40) {
+          setLogo(BlackNavlogo);
+        } else {
+          setLogo(WhiteNavLogo);
+        }
       }
-    });
-  };
+    };
 
-  changeNav();
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup: remove the event listener when component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div>
-      <nav className="nav">
+      <nav className="nav font-rubik flex items-center justify-between px-5 lg:px-20 py-4 lg:py-6">
       <a href="/">
         <img src={navLogo} alt="" className="w-[230px] lg:w-[350px]" />
       </a>
@@ -45,7 +52,7 @@ function Nav() {
           />
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="/" className="link">Home</a>
             </li>
             <li>
               <a href="/about">About Us</a>
