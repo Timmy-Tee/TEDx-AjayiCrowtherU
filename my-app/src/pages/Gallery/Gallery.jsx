@@ -2,7 +2,7 @@ import Banner from "../../components/Banner/Banner";
 import Footer from "../../components/Footer/Footer";
 import Nav from "../../components/NavBar/Nav";
 import images from "../../data/galleryImages";
-import Im from "../../images/gallery.JPG";
+import Im from "../../images/gallery.jpg";
 import { useEffect, useState } from "react";
 import { cardio } from "ldrs";
 cardio.register();
