@@ -1,10 +1,8 @@
 import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import Logo_white_red from "../../images/logo-white.png";
-import Button from "../Button/Button";
 import Icons from "../Icons/Icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const form = "https://docs.google.com/forms/d/e/1FAIpQLSfNL8pYiIKLvbamNEjI6HWFkxDVyEHpYY3ssuZVY5Lpn22Aaw/viewform?usp=sf_link"
 
 
 function Ticket() {

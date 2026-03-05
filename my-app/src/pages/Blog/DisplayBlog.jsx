@@ -14,7 +14,7 @@ function DisplayBlog() {
         setBlog([res.data]);
     };
     getPost();
-  }, []);
+  });
 
   return (
     <div className="flex place-content-center flex-col">
