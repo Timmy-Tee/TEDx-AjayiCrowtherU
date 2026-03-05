@@ -19,7 +19,7 @@ Recognized for his impact in the industry, Temidayo was named a Karman Fellow in
 Temidayo holds a B.Tech in Meteorology from the Federal University of Technology, Akure, a Master’s in Satellite Applications from the University of Strathclyde, and a PhD from the University of Delaware. He is a Research Affiliate at the MIT Media Lab and a member of the World Economic Forum’s Global Future Council on Space Technologies`,
   },
   {
-    key: 1,
+    key: 2,
     Image: Speaker2,
     name: "Adeoluwa Akintoba",
     job: "Actor",
@@ -33,7 +33,7 @@ He has been featured in over 25 productions, including Slum-King, Sista, MTV Shu
 Beyond acting, Adeoluwa is a vibrant host and speaker known for inspiring young talents.`,
   },
   {
-    key: 2,
+    key: 3,
     Image: Speaker3,
     name: "Joey Ossai Obassi ",
     job: " CEO, The Connecting Bridge",
@@ -47,7 +47,7 @@ He is causing a revolution in the media space, one brand at a time.
     `,
   },
   {
-    key: 1,
+    key: 4,
     Image: Speaker4,
     name: "Toluwanimi Lazarus ",
     job: "Mental Health Advocate",
@@ -59,7 +59,7 @@ University of Edinburgh, UK. She is a passionate mental and emotional health adv
 online and offline to lead better lives. Her expertise spans several critical areas and in recognition of her amazing work, She has been featured on prominent platforms, including Building Nations Initiative, Youths in Crisis Situations, Success Fort Initiative and several others.`,
   },
   {
-    key: 3,
+    key: 5,
     Image: Speaker5,
     name: "Blessing Chesterfield ",
     // job: "Managing Director at The Wash Room Limited",
@@ -71,7 +71,7 @@ online and offline to lead better lives. Her expertise spans several critical ar
     `,
   },
   {
-    key: 4,
+    key: 6,
     Image: Speaker6,
     name: "Kunbi Adeoti",
     job: "@kunbiadeoti",

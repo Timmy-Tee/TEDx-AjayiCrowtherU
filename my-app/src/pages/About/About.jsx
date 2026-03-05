@@ -30,10 +30,10 @@ function About() {
           <Nav />
           <Banner image={TeamBannerImage} />
 
-          {aboutContent.map((index,content) => {
+          {aboutContent.map((content) => {
             return (
               <AboutUs
-              key={index}
+              key={content.title}
                 title={content.title}
                 paragraph={content.text}
                 position={content.position}

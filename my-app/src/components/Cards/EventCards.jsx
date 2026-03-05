@@ -7,7 +7,7 @@ function EventCard() {
     <div className=" p-3 mt-5">
     <TextHeader main_header={"Event Schedule"} mini_header="Events" header/>
     <div className="lg:p-7 sm:p-3 mt-6 overflow-hidden lg:gap-4 gap-8 lg:grid-cols-2 sm:grid sm:grid-cols-1">
-      {schedules.map((index,schedule) => (
+      {schedules.map((schedule, index) => (
           <div key={index} className="group flex flex-col lg:p-10 place-content-center lg:space-y-4 p-8 space-y-5 relative bg-[#ebedee] rounded-xl  hover:bg-second-red hover:text-white ease-in-out duration-300">
     
               <div className="absolute rounded-bl-[100px] w-[100px] h-[100px] top-0 right-0 rounded-tr-xl bg-second-red text-white group-hover:bg-white group-hover:text-second-red grid place-content-center">

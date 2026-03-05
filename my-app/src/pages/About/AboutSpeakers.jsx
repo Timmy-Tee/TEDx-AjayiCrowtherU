@@ -13,7 +13,7 @@ function AboutSpeakers() {
 
       <section className="bg-white ">
         <div className="grid p-[10px] grid-cols-1 lg:mx-0 gap-6 lg:max-w-none lg:grid-cols-2 place-content-center items-center pre-wrap">
-          {speakerData.map((index,speaker) => {
+          {speakerData.map((speaker, index) => {
             return (
               <div>
                 {/* To be mapped */}
@@ -28,7 +28,7 @@ function AboutSpeakers() {
                       <div className="lg:w-[50%] w-full grid place-content-center overflow-hidden rounded-3xl ">
 
                         <Cards
-                          key={index}
+                          key={speaker.key}
                           image={speaker.Image}
                           name={speaker.name}
                           job={speaker.job}
